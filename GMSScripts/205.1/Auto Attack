@@ -21,7 +21,7 @@ hook:
 call GetTickCount
 mov edx,eax
 sub edx, [timer]
-cmp edx, #5 // change delay here
+cmp edx, #100 // change delay here
 jl return
 mov [timer], eax
 pushad
